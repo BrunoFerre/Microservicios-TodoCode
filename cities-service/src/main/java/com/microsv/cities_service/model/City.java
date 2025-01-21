@@ -1,31 +1,31 @@
 package com.microsv.cities_service.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Cities {
-    private Long id_city;
+public class City {
+    private Long city_id;
     private String name;
     private String continent;
     private String country;
     private String state;
 
-    public Cities() {
+    public City() {
     }
 
-    public Cities(String name, String continent, String country, String state, List<String> hotels) {
+    public City(Long city_id, String name, String continent, String country, String state) {
+        this.city_id = city_id;
         this.name = name;
         this.continent = continent;
         this.country = country;
         this.state = state;
     }
 
-    public Long getId_city() {
-        return id_city;
+    public Long getCity_id() {
+        return city_id;
     }
 
-    public void setId_city(Long id_city) {
-        this.id_city = id_city;
+    public void setCity_id(Long city_id) {
+        this.city_id = city_id;
     }
 
     public String getName() {

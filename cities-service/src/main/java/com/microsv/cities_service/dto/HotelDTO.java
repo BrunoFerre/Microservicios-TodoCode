@@ -16,19 +16,35 @@ public class HotelDTO {
         this.city_id = city_id;
     }
 
-    public Long getCity_id() {
-        return city_id;
+    public Long getId() {
+        return id;
     }
 
-    public int getStars() {
-        return stars;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
-    public Long getId() {
-        return id;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getStars() {
+        return stars;
+    }
+
+    public void setStars(int stars) {
+        this.stars = stars;
+    }
+
+    public Long getCity_id() {
+        return city_id;
+    }
+
+    public void setCity_id(Long city_id) {
+        this.city_id = city_id;
     }
 }

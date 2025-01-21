@@ -18,7 +18,7 @@ public class HotelsController {
     private HotelsService hotelsService;
 
     @GetMapping("/{city_id}")
-    public List<Hotel> getHotelsByCityId(@PathVariable("city_id") Long cityId) {
-        return hotelsService.getHotelsByCityId(cityId);
+    public List<Hotel> getHotelsByCityId (@PathVariable Long city_id) {
+        return hotelsService.getHotelsByCityId(city_id);
     }
 }
